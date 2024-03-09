@@ -1,0 +1,43 @@
+.presentationPage {
+    min-height: 100vh;
+
+    .headerBox {
+        color: white;
+        min-height: 70vh;
+        background: rgb(58, 73, 180);
+        background: linear-gradient(
+            57deg,
+            rgba(58, 73, 180, 1) 0%,
+            rgba(29, 195, 253, 1) 50%,
+            rgba(69, 252, 241, 1) 100%
+        );
+    }
+
+    .functionalityBox {
+        height: 40vh;
+    }
+
+    .graphicApp {
+        height: 50vh;
+    }
+
+    .videoPresentation {
+        color: white;
+        min-height: 70vh;
+        background: rgb(58, 73, 180);
+        background: linear-gradient(
+            57deg,
+            rgba(58, 73, 180, 1) 0%,
+            rgba(29, 195, 253, 1) 50%,
+            rgba(69, 252, 241, 1) 100%
+        );
+    }
+
+    .valutation {
+        height: 50vh;
+    }
+
+    .footer {
+        height: 30vh;
+    }
+}
