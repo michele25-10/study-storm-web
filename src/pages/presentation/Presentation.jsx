@@ -1,7 +1,13 @@
 import React from 'react';
+
+//sass
 import "./presentation.scss";
+
+//dati
 import { functionality } from './function/data';
 
+//icons
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Presentation = () => {
     return (
@@ -57,7 +63,13 @@ const Presentation = () => {
                 screenApp con le varie funzionalità
             </div>
             <div className="videoPresentation">
-                Video presentazione
+
+                <div className="title">
+                    <h3>Trailer</h3>
+                </div>
+                <p>Visualizza il trailer della nostra applicazione</p>
+                <YouTubeIcon style={{ color: "white", height: "100px", width: "100px", cursor: "pointer", }} />
+
             </div>
             <div className="valutation">
                 Recensioni
