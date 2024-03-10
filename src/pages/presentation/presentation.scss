@@ -77,7 +77,24 @@
     }
 
     .graphicApp {
-        height: 50vh;
+        margin: 30px 0px;
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1); /* Inverte il colore delle frecce */
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: white; /* Imposta il colore del testo delle frecce */
+        }
+
+        .carousel-item {
+            img {
+                height: 70vh;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
     }
 
     .videoPresentation {

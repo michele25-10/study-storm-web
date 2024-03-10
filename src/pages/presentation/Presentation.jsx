@@ -39,7 +39,6 @@ const Presentation = () => {
                     <div className="screenPhone">
                         <img src='/iphoneImg.png' alt="" />
                     </div>
-
                 </div>
             </div>
             <div className="functionalityBox">
@@ -60,19 +59,45 @@ const Presentation = () => {
                 </div>
             </div>
             <div className="graphicApp">
-                screenApp con le varie funzionalità
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/carousel1.png" class="d-block w-100 h-80" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/carousel2.png" class="d-block w-100 h-80" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/carousel3.png" class="d-block w-100 h-80" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prima</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Dopo</span>
+                    </button>
+                </div>
             </div>
             <div className="videoPresentation">
-
                 <div className="title">
                     <h3>Trailer</h3>
                 </div>
                 <p>Visualizza il trailer della nostra applicazione</p>
                 <YouTubeIcon style={{ color: "white", height: "100px", width: "100px", cursor: "pointer", }} />
-
             </div>
             <div className="valutation">
-                Recensioni
+                <div className="contentValuatation">
+                    <h3>Recensioni</h3>
+
+                </div>
             </div>
             <div className="footer">
                 Footer
