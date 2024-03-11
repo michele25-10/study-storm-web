@@ -93,10 +93,19 @@ const Presentation = () => {
                 <p>Visualizza il trailer della nostra applicazione</p>
                 <YouTubeIcon style={{ color: "white", height: "100px", width: "100px", cursor: "pointer", }} />
             </div>
-            <div className="valutation">
-                <div className="contentValuatation">
-                    <h3>Recensioni</h3>
-
+            <div className="descriptionProject">
+                <div className="cardProject">
+                    <h3>Study Storm</h3>
+                    <p>Study Storm è una applicazione dedicata agli studenti, l'obiettivo è quello di rendere lo studio
+                        più semplice aumentando l'organizzazione degli studenti.<br />
+                        Se hai un esame universitario o una verifica, hai bisogno di obiettivi!<br />
+                        Crea il tuo obiettivo e crea le tue sotto task con delle scadenze, i risultati miglioreranno!<br />
+                        E la nostra app migliorerà con te!
+                        Se hai delle domande interfacciati con la nostra comunity per avere delle risposte.
+                    </p>
+                </div>
+                <div className="imgProject">
+                    <img src="/logo.jpg" alt="logo" />
                 </div>
             </div>
             <div className="footer">
