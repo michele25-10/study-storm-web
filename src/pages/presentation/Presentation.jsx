@@ -114,6 +114,34 @@ const Presentation = () => {
                     <img src="/logo.jpg" alt="logo" />
                 </div>
             </div>
+            <div className="newsLetter">
+                <div className="title">
+                    <h3>Newsletter</h3>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" />
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome" />
+                </div>
+                <div>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Telefono" />
+                </div>
+                <div >
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                    <label class="form-check-label" for="gridCheck">
+                        Accetto privacy policy
+                    </label>
+                </div>
+
+                <div>
+                    <button className='btn btn-success'>Iscriviti</button>
+                </div>
+            </div>
             <div className="footer">
                 Footer
             </div>
