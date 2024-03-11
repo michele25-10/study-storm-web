@@ -118,10 +118,10 @@ const Presentation = () => {
                 <div className="title">
                     <h3>Newsletter</h3>
                 </div>
-                <div class="col">
+                <div>
                     <input type="text" class="form-control" placeholder="Nome" aria-label="Nome" />
                 </div>
-                <div class="col">
+                <div>
                     <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome" />
                 </div>
                 <div>
@@ -130,7 +130,6 @@ const Presentation = () => {
                 <div >
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
                 </div>
-
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" />
                     <label class="form-check-label" for="gridCheck">
