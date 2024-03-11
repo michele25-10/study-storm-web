@@ -3,13 +3,11 @@ import React from 'react';
 //sass
 import "./presentation.scss";
 
-//icons
-import YouTubeIcon from '@mui/icons-material/YouTube';
-
 //components
 import HeaderBox from "./components/headerBox/HeaderBox";
 import FunctionalityBox from './components/functionalityBox/FunctionalityBox';
 import GraphicApp from './components/graphicApp/GraphicApp';
+import VideoPresentation from './components/videoPresentation/VideoPresentation';
 
 const Presentation = () => {
     return (
@@ -17,14 +15,7 @@ const Presentation = () => {
             <HeaderBox />
             <FunctionalityBox />
             <GraphicApp />
-
-            <div className="videoPresentation">
-                <div className="title">
-                    <h3>Trailer</h3>
-                </div>
-                <p>Visualizza il trailer della nostra applicazione</p>
-                <YouTubeIcon style={{ color: "white", height: "100px", width: "100px", cursor: "pointer", }} />
-            </div>
+            <VideoPresentation />
             <div className="descriptionProject">
                 <div className="cardProject">
                     <h3>Study Storm</h3>
