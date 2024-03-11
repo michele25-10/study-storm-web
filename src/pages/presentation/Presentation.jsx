@@ -3,36 +3,18 @@ import React from 'react';
 //sass
 import "./presentation.scss";
 
-//dati
-import { functionality } from './function/data';
-
 //icons
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 //components
 import HeaderBox from "./components/headerBox/HeaderBox";
+import FunctionalityBox from './components/functionalityBox/FunctionalityBox';
 
 const Presentation = () => {
     return (
         <div className='presentationPage'>
             <HeaderBox />
-            <div className="functionalityBox">
-                <div className="title">
-                    <span>Macro funzionalità</span>
-                </div>
-                <div className="description">
-                    Le principali funzioni che renderanno il vostro studio più semplice e produttivo
-                </div>
-                <div className="listTips">
-                    {functionality.map((item) => (
-                        <div className="box" key={item.title}>
-                            {item.img}
-                            <h5>{item.title}</h5>
-                        </div>
-                    ))}
-
-                </div>
-            </div>
+            <FunctionalityBox />
             <div className="graphicApp">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
@@ -42,13 +24,13 @@ const Presentation = () => {
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/carousel1.png" class="d-block w-100 h-80" alt="..." />
+                            <img src="/carousel1.png" class="d-block w-100 " alt="..." />
                         </div>
                         <div class="carousel-item">
-                            <img src="/carousel2.png" class="d-block w-100 h-80" alt="..." />
+                            <img src="/carousel2.png" class="d-block w-100 " alt="..." />
                         </div>
                         <div class="carousel-item">
-                            <img src="/carousel3.png" class="d-block w-100 h-80" alt="..." />
+                            <img src="/carousel3.png" class="d-block w-100 " alt="..." />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
