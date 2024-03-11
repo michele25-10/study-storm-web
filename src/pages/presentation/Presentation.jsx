@@ -103,6 +103,12 @@ const Presentation = () => {
                         E la nostra app migliorerà con te!
                         Se hai delle domande interfacciati con la nostra comunity per avere delle risposte.
                     </p>
+                    <div className="downloadButton">
+                        <button class="btn market-btn google-btn">
+                            <span class="market-button-subtitle">Scarica su</span>
+                            <span class="market-button-title">Play Store</span>
+                        </button>
+                    </div>
                 </div>
                 <div className="imgProject">
                     <img src="/logo.jpg" alt="logo" />
