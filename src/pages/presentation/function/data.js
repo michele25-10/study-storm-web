@@ -24,4 +24,22 @@ export const functionality = [
         title: "Team",
         color: "lightblue"
     }
-]
+];
+
+export const reviews = [
+    {
+        img: "/avatar3.jpg",
+        name: "Silvia",
+        desc: "Ho provato questa app la prima settimana in cui è stata pubblicata, devo ammettere che è stata molto utile nell'affrontare gli esami del primo anno di università."
+    },
+    {
+        img: "/avatar2.jpeg",
+        name: "Marco",
+        desc: "Mi sono appena diplomato, ho raggiunto tutti gli obiettivi che mi ero prefissato, grazie a study-storm!"
+    },
+    {
+        img: "/avatar1.png",
+        name: "Marta",
+        desc: "Gli studenti della comunity sono super disponibili, avevo bisogno di un consiglio per poter scegliere l'università che più mi piacesse, e in una settimana ho preso la mia decisione senza insicurezze."
+    },
+]; 
