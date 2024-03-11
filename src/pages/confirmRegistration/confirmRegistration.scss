@@ -1,0 +1,37 @@
+.confirmRegistration {
+    min-height: 100vh;
+    background: linear-gradient(
+            57deg,
+            rgba(58, 73, 180, 0.7) 0%,
+            rgba(29, 195, 253, 0.8) 50%,
+            rgba(69, 252, 241, 0.8) 100%
+        ),
+        url("../../../public/imgSfondo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+        width: 400px;
+        background-color: #fff;
+        min-height: 500px;
+        border-radius: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+        .imgHeader {
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+    }
+}
