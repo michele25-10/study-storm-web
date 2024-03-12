@@ -9,6 +9,7 @@ import {
 //PAGES
 import Presentation from './pages/presentation/Presentation';
 import ConfirmRegistration from './pages/confirmRegistration/ConfirmRegistration';
+import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/confirm-registration",
     element: <ConfirmRegistration />,
+  },
+  {
+    path: "/forgot-password",
+    element: <ForgotPassword />,
   },
 ]);
 
