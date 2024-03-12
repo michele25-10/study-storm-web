@@ -46,15 +46,15 @@ export const ws = async (
         });
 
     if (apiResponse.status === 401) {
-        sessionStorage.clear();
-        location.href = "../login";
-        gestioneSnackbar(true, "Token scaduto!", "error");
+        //sessionStorage.clear();
+        //location.href = "../login";
+        //gestioneSnackbar(true, "Token scaduto!", "error");
     }
 
     if (apiResponse.status === 403) {
-        sessionStorage.clear();
-        location.href = "../login";
-        gestioneSnackbar(true, "Non hai i permessi!", "error");
+        //sessionStorage.clear();
+        //location.href = "../login";
+        //gestioneSnackbar(true, "Non hai i permessi!", "error");
     }
 
     return apiResponse;
