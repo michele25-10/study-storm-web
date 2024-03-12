@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 .confirmRegistration {
     min-height: 100vh;
     background: linear-gradient(
@@ -14,6 +16,7 @@
     justify-content: center;
 
     .content {
+        margin: 10px;
         width: 400px;
         background-color: #fff;
         min-height: 500px;
@@ -32,6 +35,10 @@
                 object-fit: cover;
                 border-radius: 50%;
             }
+        }
+
+        @include sm {
+            border-radius: 20px;
         }
     }
 }
