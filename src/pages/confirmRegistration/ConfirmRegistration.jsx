@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import "./confirmRegistration.scss";
 
 import { useParams } from 'react-router-dom';
+import { confirmUserRegistration } from './function/api';
 
 const ConfirmRegistration = () => {
-
     const { id } = useParams();
-    console.log(id);
+    const [show, setShow] = useState();
+
+    useEffect(() => {
+        confirmUserRegistration({ id }).then((res) => {
+            //res contiene result.error(
+            setShow(!res);
+        })
+    }, [id]);
 
     return (
         <div className='confirmRegistration'>
@@ -16,11 +23,13 @@ const ConfirmRegistration = () => {
                     <img src="/logo.jpg" alt="" />
                 </div>
                 <div className="titleContent">
-                    <h3>Benvenuto Studente!</h3>
+                    <h3>{show ? "Benvenuto Studente!" : "Errore, riprova più tardi"}</h3>
                 </div>
                 <div className="contentDescription">
-                    Ciao utente, grazie per aver confermato la tua iscrizione!<br />
-                    Il nostro team è entusiasta di averti in squadra e lavoreremo per migliorare l'applicazione e di conseguenza migliorare il tuo studio.
+                    {show ? `Ciao utente, grazie per aver confermato la tua iscrizione!
+                    Il nostro team è entusiasta di averti in squadra e lavoreremo per migliorare l'applicazione e di conseguenza migliorare il tuo studio.`
+                        : "Ci scusiamo per il disagio il nostro team sta lavorando per risolvere il problema, riprova più tardi."
+                    }
                 </div>
             </div>
         </div >

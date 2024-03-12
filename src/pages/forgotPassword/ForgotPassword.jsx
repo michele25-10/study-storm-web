@@ -11,12 +11,11 @@ const ForgotPassword = () => {
     const [show, setShow] = useState(null);
 
     useEffect(() => {
-        console.log("Sono qui dentro");
         confirmForgotPassword({ id }).then((res) => {
             //se res === true vuol dire che c'è un errore
             setShow(!res);
         });
-    }, [])
+    }, [id])
 
     return (
         <div className='forgotPassword'>
@@ -28,9 +27,10 @@ const ForgotPassword = () => {
                     <h3>{show ? "Nuove credenziali!" : "Errore, riprova più tardi"}</h3>
                 </div>
                 <div className="contentDescription">
-                    {show ? `Ciao utente, controlla le tue mail, ti abbiamo inviato le tue nuove credenziali! <br />
+                    {show ? `Ciao utente, controlla le tue mail, ti abbiamo inviato le tue nuove credenziali!
                     Effettua l'accesso e cambia la password, così da poter tornare a studiare al meglio!`
-                        : "Siamo spiacenti ma il servizio è momentaneamente disabilitato riprova in un secondo momento.<br/> Il nostro team si scusa per il disagio"}
+                        : `Siamo spiacenti ma il servizio è momentaneamente disabilitato riprova in un secondo momento.
+                         Il nostro team si scusa per il disagio`}
                 </div>
             </div>
         </div >
