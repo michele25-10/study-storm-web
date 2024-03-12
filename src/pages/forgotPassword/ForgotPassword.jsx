@@ -2,7 +2,12 @@ import React from 'react'
 
 import "./forgotPassword.scss";
 
+import { useParams } from 'react-router-dom';
+
 const ForgotPassword = () => {
+
+    const { id } = useParams();
+
     return (
         <div className='forgotPassword'>
             <div className="content">

@@ -2,7 +2,13 @@ import React from 'react'
 
 import "./confirmRegistration.scss";
 
+import { useParams } from 'react-router-dom';
+
 const ConfirmRegistration = () => {
+
+    const { id } = useParams();
+    console.log(id);
+
     return (
         <div className='confirmRegistration'>
             <div className="content">
