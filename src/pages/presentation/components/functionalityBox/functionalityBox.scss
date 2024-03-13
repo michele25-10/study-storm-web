@@ -1,13 +1,21 @@
+@import "../../../../styles/responsive.scss";
+
 .functionalityBox {
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
     .title {
+        margin-top: 20px;
         font-size: 32px;
         font-weight: 600;
+    }
+    .description {
+        text-align: center;
+        padding: 0px 10px;
     }
 
     .listTips {
@@ -16,6 +24,10 @@
         justify-content: space-between;
         gap: 20px;
 
+        @include md {
+            flex-direction: column;
+        }
+
         .box {
             height: 250px;
             width: 200px;
@@ -23,6 +35,11 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+
+            @include md {
+                height: 150px;
+                width: 200px;
+            }
         }
     }
 }

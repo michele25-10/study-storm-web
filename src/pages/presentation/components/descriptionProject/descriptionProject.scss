@@ -1,5 +1,7 @@
+@import "../../../../styles/responsive.scss";
+
 .descriptionProject {
-    height: 50vh;
+    min-height: 50vh;
     justify-content: space-between;
     width: 100%;
     display: flex;
@@ -7,10 +9,18 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
+    @include md {
+        gap: 10px;
+        padding: 5px;
+    }
 
     .cardProject {
         width: 100%;
         padding: 70px;
+        @include md {
+            padding: 10px;
+            text-align: center;
+        }
 
         h3 {
             text-align: center;
@@ -59,6 +69,9 @@
     .imgProject {
         width: 100%;
         text-align: center;
+        @include md {
+            display: none;
+        }
 
         img {
             width: 250px;
