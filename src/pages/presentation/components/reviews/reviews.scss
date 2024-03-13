@@ -1,3 +1,5 @@
+@import "../../../../styles/responsive.scss";
+
 .reviews {
     min-height: 60vh;
     display: flex;
@@ -10,6 +12,9 @@
         flex-direction: row;
         gap: 30px;
         padding: 20px;
+        @include md {
+            flex-direction: column;
+        }
 
         .cardReview {
             width: 250px;
@@ -17,6 +22,11 @@
             flex-direction: column;
             align-items: center;
             gap: 10px;
+
+            @include lg {
+                width: 225px;
+            }
+
             .headerImg {
                 img {
                     width: 100px;

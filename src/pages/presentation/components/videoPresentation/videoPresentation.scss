@@ -1,3 +1,5 @@
+@import "../../../../styles/responsive.scss";
+
 .videoPresentation {
     color: white;
     min-height: 70vh;
@@ -11,12 +13,18 @@
         url("./../../../../../public/work_phone.jpg");
     background-size: cover;
     background-position: center;
-
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    @include md {
+        min-height: 50vh;
+    }
+    @include sm {
+        min-height: 40vh;
+    }
+
     .title {
         justify-content: center;
         text-align: center;

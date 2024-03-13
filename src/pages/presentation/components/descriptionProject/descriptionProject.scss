@@ -1,7 +1,7 @@
 @import "../../../../styles/responsive.scss";
 
 .descriptionProject {
-    min-height: 50vh;
+    min-height: 30vh;
     justify-content: space-between;
     width: 100%;
     display: flex;
@@ -9,14 +9,15 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
+
     @include md {
         gap: 10px;
-        padding: 5px;
+        padding: 20px 0px;
     }
 
     .cardProject {
         width: 100%;
-        padding: 70px;
+        padding: 20px 70px;
         @include md {
             padding: 10px;
             text-align: center;
