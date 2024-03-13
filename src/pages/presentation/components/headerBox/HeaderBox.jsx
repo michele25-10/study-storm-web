@@ -8,11 +8,13 @@ const HeaderBox = () => {
                 <div className="logo">
                     <h3>Study-Storm</h3>
                 </div>
-                <ul>
-                    <li>Contattateci</li>
-                    <li>Funzionalità</li>
-                    <li>Recensioni</li>
-                </ul>
+                <div className="itemNavbar">
+                    <ul>
+                        <li>Contattateci</li>
+                        <li>Funzionalità</li>
+                        <li>Recensioni</li>
+                    </ul>
+                </div>
             </div>
             <div className="appBox">
                 <div className="description">

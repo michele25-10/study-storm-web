@@ -18,11 +18,11 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    @include md {
+    @include sm {
         min-height: 50vh;
     }
-    @include sm {
-        min-height: 40vh;
+    @include md {
+        min-height: 60vh;
     }
 
     .title {

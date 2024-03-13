@@ -1,31 +1,56 @@
+@import "../../../../styles/responsive.scss";
+
 .headerBox {
     color: white;
     min-height: 70vh;
     background: rgb(58, 73, 180);
     background: linear-gradient(145deg, rgba(58, 73, 180, 1) 20%, rgba(29, 195, 253, 1) 50%, rgba(58, 73, 180, 1) 80%);
+
+    @include md {
+        min-height: 50vh;
+    }
+
     .navbar {
         display: flex;
-        padding: 10px 50px;
+        padding: 10px 10px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
         ul {
             display: flex;
             gap: 20px;
             list-style: none;
+            margin: 0px;
+            padding: 0px;
 
             li {
                 cursor: pointer;
+                @include sm {
+                    font-size: small;
+                }
             }
         }
     }
+
     .appBox {
         align-items: center;
         justify-content: space-around;
         display: flex;
         padding: 20px;
+        height: 100%;
+        background-color: red;
+
         .description {
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 15px;
+            height: 100%;
+
+            @include md {
+                text-align: center;
+            }
         }
 
         .screenPhone {
@@ -34,6 +59,9 @@
             align-items: center;
             img {
                 width: 300px;
+            }
+            @include md {
+                display: none;
             }
         }
     }
