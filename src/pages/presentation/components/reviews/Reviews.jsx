@@ -8,7 +8,7 @@ import { reviews } from "../../function/data.js";
 
 const Reviews = () => {
     return (
-        <div className="reviews">
+        <div className="reviews" id="reviews">
             <h3>Cosa ne pensano gli studenti!</h3>
             <div className="listReviews">
                 {reviews.map((item) => (

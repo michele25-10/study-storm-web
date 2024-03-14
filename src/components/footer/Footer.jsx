@@ -12,7 +12,7 @@ const Footer = () => {
     const [email, setEmail] = useState((""));
 
     return (
-        <div className="footer">
+        <div className="footer" id="footer">
             <div className="newsLetter">
                 <h3>NewsLetter</h3>
                 <div class="input-group inputNewsLetter">

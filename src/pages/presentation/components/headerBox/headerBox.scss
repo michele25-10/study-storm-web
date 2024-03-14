@@ -29,6 +29,10 @@
                 @include sm {
                     font-size: small;
                 }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
@@ -39,7 +43,6 @@
         display: flex;
         padding: 20px;
         height: 100%;
-        background-color: red;
 
         .description {
             display: flex;

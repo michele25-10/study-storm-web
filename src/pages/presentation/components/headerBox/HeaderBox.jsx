@@ -10,9 +10,9 @@ const HeaderBox = () => {
                 </div>
                 <div className="itemNavbar">
                     <ul>
-                        <li>Contattateci</li>
-                        <li>Funzionalità</li>
-                        <li>Recensioni</li>
+                        <li><a href='#footer'>Contattateci</a></li>
+                        <li><a href='#functionality'>Funzionalità</a></li>
+                        <li><a href='#reviews'>Recensioni</a></li>
                     </ul>
                 </div>
             </div>

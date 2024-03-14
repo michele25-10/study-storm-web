@@ -8,7 +8,7 @@ import { functionality } from '../../function/data';
 
 const FunctionalityBox = () => {
     return (
-        <div className="functionalityBox">
+        <div className="functionalityBox" id="functionality">
             <div className="title">
                 <span>Macro funzionalità</span>
             </div>
