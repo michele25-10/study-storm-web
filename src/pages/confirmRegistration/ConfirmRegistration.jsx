@@ -7,12 +7,14 @@ import { confirmUserRegistration } from './function/api';
 
 const ConfirmRegistration = () => {
     const { id } = useParams();
-    const [show, setShow] = useState();
+    const [show, setShow] = useState(null);
+    const [message, setMessage] = useState("");
 
     useEffect(() => {
         confirmUserRegistration({ id }).then((res) => {
-            //res contiene result.error(
-            setShow(!res);
+            //res contiene result.error()
+            setShow(!res.error);
+            setMessage(res.data.message);
         })
     }, [id]);
 
@@ -26,8 +28,7 @@ const ConfirmRegistration = () => {
                     <h3>{show ? "Benvenuto Studente!" : "Errore, riprova più tardi"}</h3>
                 </div>
                 <div className="contentDescription">
-                    {show ? `Ciao utente, grazie per aver confermato la tua iscrizione!
-                    Il nostro team è entusiasta di averti in squadra e lavoreremo per migliorare l'applicazione e di conseguenza migliorare il tuo studio.`
+                    {show && message ? message
                         : "Ci scusiamo per il disagio il nostro team sta lavorando per risolvere il problema, riprova più tardi."
                     }
                 </div>
