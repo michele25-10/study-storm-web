@@ -16,7 +16,7 @@ const HeaderBox = () => {
                     </ul>
                 </div>
             </div>
-            <div className="appBox">
+            <div className="appBox container">
                 <div className="description">
                     <div className="title">
                         <h3>Organizza i tuoi obiettivi</h3>

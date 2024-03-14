@@ -2,7 +2,7 @@
 
 .headerBox {
     color: white;
-    min-height: 70vh;
+    min-height: 60vh;
     background: rgb(58, 73, 180);
     background: linear-gradient(145deg, rgba(58, 73, 180, 1) 20%, rgba(29, 195, 253, 1) 50%, rgba(58, 73, 180, 1) 80%);
 
@@ -41,9 +41,8 @@
         align-items: center;
         justify-content: space-around;
         display: flex;
-        padding: 20px;
+        padding: 20px 0px;
         height: 100%;
-
         .description {
             display: flex;
             flex-direction: column;
