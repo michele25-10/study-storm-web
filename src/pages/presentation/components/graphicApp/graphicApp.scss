@@ -3,15 +3,6 @@
 .graphicApp {
     padding: 10px 0px;
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        filter: invert(1); /* Inverte il colore delle frecce */
-    }
-    .carousel-control-prev,
-    .carousel-control-next {
-        color: white; /* Imposta il colore del testo delle frecce */
-    }
-
     .carousel-item {
         img {
             height: 70vh;

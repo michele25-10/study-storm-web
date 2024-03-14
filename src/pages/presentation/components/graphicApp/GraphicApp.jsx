@@ -5,7 +5,7 @@ import "./graphicApp.scss";
 const GraphicApp = () => {
     return (
         <div className="graphicApp">
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-dark">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -31,7 +31,7 @@ const GraphicApp = () => {
                     <span class="visually-hidden">Dopo</span>
                 </button>
             </div>
-        </div>
+        </div >
     )
 }
 
