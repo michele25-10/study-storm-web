@@ -22,7 +22,7 @@ const DescriptionProject = () => {
                 </div>
             </div>
             <div className="imgProject">
-                <img src="/logo.jpg" alt="logo" />
+                <img src="/logo.png" alt="logo" />
             </div>
         </div>
     )

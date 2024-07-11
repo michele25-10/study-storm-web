@@ -1,6 +1,7 @@
 @import "../../../../styles/responsive.scss";
 
 .descriptionProject {
+    color: whitesmoke;
     min-height: 30vh;
     justify-content: space-between;
     width: 100%;
@@ -75,8 +76,8 @@
         }
 
         img {
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
         }
     }
 }
