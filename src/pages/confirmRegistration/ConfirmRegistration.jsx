@@ -22,7 +22,7 @@ const ConfirmRegistration = () => {
         <div className='confirmRegistration'>
             <div className="content">
                 <div className="imgHeader">
-                    <img src="/logo.jpg" alt="" />
+                    <img src="/logo.png" alt="" />
                 </div>
                 <div className="titleContent">
                     <h3>{show ? "Benvenuto Studente!" : "Errore, riprova più tardi"}</h3>

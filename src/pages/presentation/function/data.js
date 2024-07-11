@@ -5,22 +5,22 @@ import Groups2Icon from '@mui/icons-material/Groups2';
 
 export const functionality = [
     {
-        img: <CalendarMonthIcon style={{ height: "100px", width: "100px", color: "red" }} />,
+        img: <CalendarMonthIcon style={{ height: "100px", width: "100px", color: "#007BA7" }} />,
         title: "Calendarizzazione",
         color: "green"
     },
     {
-        img: <SportsScoreIcon style={{ height: "100px", width: "100px", color: "green" }} />,
+        img: <SportsScoreIcon style={{ height: "100px", width: "100px", color: "#6A5ACD" }} />,
         title: "Obiettivi",
         color: "orange",
     },
     {
-        img: <QueryStatsIcon style={{ height: "100px", width: "100px", color: "purple" }} />,
+        img: <QueryStatsIcon style={{ height: "100px", width: "100px", color: "#AB274F" }} />,
         title: "Statistiche",
         color: "violet",
     },
     {
-        img: <Groups2Icon style={{ height: "100px", width: "100px", color: "#007FFF" }} />,
+        img: <Groups2Icon style={{ height: "100px", width: "100px", color: "#6050DC" }} />,
         title: "Team",
         color: "lightblue"
     }

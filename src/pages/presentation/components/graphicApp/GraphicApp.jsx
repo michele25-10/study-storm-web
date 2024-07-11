@@ -10,16 +10,32 @@ const GraphicApp = () => {
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/carousel1.png" class="d-block w-100 " alt="..." />
+                        <img src="/1.png" class="d-block w-100 " alt="..." />
                     </div>
                     <div class="carousel-item">
-                        <img src="/carousel2.png" class="d-block w-100 " alt="..." />
+                        <img src="/2.png" class="d-block w-100 " alt="..." />
                     </div>
                     <div class="carousel-item">
-                        <img src="/carousel3.png" class="d-block w-100 " alt="..." />
+                        <img src="/3.png" class="d-block w-100 " alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/4.png" class="d-block w-100 " alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/5.png" class="d-block w-100 " alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/6.png" class="d-block w-100 " alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/7.png" class="d-block w-100 " alt="..." />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

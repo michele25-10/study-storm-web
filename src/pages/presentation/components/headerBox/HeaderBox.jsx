@@ -30,7 +30,7 @@ const HeaderBox = () => {
                     </div>
                 </div>
                 <div className="screenPhone">
-                    <img src='/iphoneImg.png' alt="" />
+                    <img src='/1.png' alt="" />
                 </div>
             </div>
         </div>

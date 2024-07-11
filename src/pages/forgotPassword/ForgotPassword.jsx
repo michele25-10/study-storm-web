@@ -21,7 +21,7 @@ const ForgotPassword = () => {
         <div className='forgotPassword'>
             <div className="content">
                 <div className="imgHeader">
-                    <img src="/logo.jpg" alt="" />
+                    <img src="/logo.png" alt="" />
                 </div>
                 <div className="titleContent">
                     <h3>{show ? "Nuove credenziali!" : "Errore, riprova più tardi"}</h3>
