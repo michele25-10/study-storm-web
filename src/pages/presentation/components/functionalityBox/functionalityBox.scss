@@ -9,6 +9,7 @@
     align-items: center;
     gap: 20px;
     @include md {
+        display: none;
         margin-bottom: 40px;
     }
 

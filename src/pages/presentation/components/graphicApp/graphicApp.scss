@@ -1,7 +1,8 @@
 @import "../../../../styles/responsive.scss";
 
 .graphicApp {
-    padding: 10px 0px;
+    padding: 20px 0px;
+    margin-bottom: 20px;
 
     .carousel-item {
         img {
@@ -9,8 +10,12 @@
             width: 100%;
             object-fit: contain;
 
+            @include md {
+                height: 60vh;
+            }
+
             @include sm {
-                height: 90vh;
+                height: 80vh;
             }
         }
     }

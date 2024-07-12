@@ -5,9 +5,7 @@ const HeaderBox = () => {
     return (
         <div className="headerBox">
             <div className="navbar container">
-                <div className="logo">
-                    <h3>Study-Storm</h3>
-                </div>
+                <h3 className='nameApp'>Study Storm</h3>
                 <div className="itemNavbar">
                     <ul>
                         <li><a href='#footer'>Contattateci</a></li>
@@ -20,7 +18,7 @@ const HeaderBox = () => {
                 <div className="description">
                     <div className="title">
 
-                        <h3>Lo studio più semplice che ci sia!</h3>
+                        <h3>Lo studio più semplice che ci sia!&#129299;</h3>
                     </div>
                     <div className="subtitle">
                         <p>L'app che trasforma il caos in successo,
@@ -28,7 +26,9 @@ const HeaderBox = () => {
                         </p>
                     </div>
                     <div className="callToAction">
-                        <button className='btn btn-light'>Visualizza altro</button>
+                        <a href='#graphicApp'>
+                            <button className='btn btn-outline-light'>Visualizza altro</button>
+                        </a>
                     </div>
                 </div>
                 <div className="screenPhone">

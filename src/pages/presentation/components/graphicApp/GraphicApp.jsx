@@ -4,7 +4,7 @@ import "./graphicApp.scss";
 
 const GraphicApp = () => {
     return (
-        <div className="graphicApp">
+        <div id="graphicApp" className="graphicApp">
             <div id="carouselExampleIndicators" class="carousel slide carousel-light">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
