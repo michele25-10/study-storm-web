@@ -6,13 +6,8 @@ const DescriptionProject = () => {
     return (
         <div className="descriptionProject">
             <div className="cardProject">
-                <h3>Study Storm</h3>
-                <p>Study Storm è una applicazione dedicata agli studenti, l'obiettivo è quello di rendere lo studio
-                    più semplice aumentando l'organizzazione degli studenti.<br />
-                    Se hai un esame universitario o una verifica, hai bisogno di obiettivi!<br />
-                    Crea il tuo obiettivo e crea le tue sotto task con delle scadenze, i risultati miglioreranno!<br />
-                    E la nostra app migliorerà con te!
-                    Se hai delle domande interfacciati con la nostra comunity per avere delle risposte.
+                <h3>Gestisci i tuoi studi facilmente</h3>
+                <p>Study Storm è l'app definitiva per gli studenti universitari e delle superiori che vogliono prendere il controllo dei loro studi. Con Study Storm, puoi creare esami e suddividerli in task più piccoli e gestibili. Monitora il tuo progresso con agende dettagliate che registrano il tempo impiegato e i risultati di ogni task. Non hai voglia di inserire i dati manualmente? Nessun problema! Attiva il timer Pomodoro o il cronometro per registrare automaticamente i tuoi progressi. Inoltre, grazie alle statistiche accurate e uno storico delle tue performance, potrai visualizzare il trend del tuo miglioramento. Non lasciare che lo stress delle settimane di esami ti soffochi, prendi in mano il tuo futuro con Study Storm!
                 </p>
                 <div className="downloadButton">
                     <button class="btn market-btn google-btn">

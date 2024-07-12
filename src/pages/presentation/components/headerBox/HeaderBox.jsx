@@ -19,11 +19,13 @@ const HeaderBox = () => {
             <div className="appBox container">
                 <div className="description">
                     <div className="title">
-                        <h3>Organizza i tuoi obiettivi</h3>
-                        <h3>Affronta le tue tempeste di studio</h3>
+
+                        <h3>Lo studio più semplice che ci sia!</h3>
                     </div>
                     <div className="subtitle">
-                        <p>L'app che ti consente di gestire al meglio i tuoi obiettivi di studio</p>
+                        <p>L'app che trasforma il caos in successo,
+                            gestendo i tuoi obiettivi di studio in modo semplice e intuitivo.
+                        </p>
                     </div>
                     <div className="callToAction">
                         <button className='btn btn-light'>Visualizza altro</button>
@@ -33,7 +35,7 @@ const HeaderBox = () => {
                     <img src='/1.png' alt="" />
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

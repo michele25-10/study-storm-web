@@ -30,16 +30,16 @@ export const reviews = [
     {
         img: "/avatar3.jpg",
         name: "Silvia",
-        desc: "Ho provato questa app la prima settimana in cui è stata pubblicata, devo ammettere che è stata molto utile nell'affrontare gli esami del primo anno di università."
+        desc: "Non posso credere quanto Study Storm abbia cambiato il mio modo di studiare! La funzione di suddivisione in task mi ha permesso di affrontare gli esami con una strategia chiara e organizzata. Perfetta per gli studenti del primo anno come me!"
     },
     {
         img: "/avatar2.jpeg",
         name: "Marco",
-        desc: "Mi sono appena diplomato, ho raggiunto tutti gli obiettivi che mi ero prefissato, grazie a study-storm!"
+        desc: "Finalmente ho trovato l'app che fa per me! Study Storm mi ha aiutato a gestire il tempo in modo incredibile. Il timer Pomodoro è diventato il mio migliore amico durante le sessioni di studio. Ho superato il primo anno di università senza stress!"
     },
     {
         img: "/avatar1.png",
         name: "Marta",
-        desc: "Gli studenti della comunity sono super disponibili, avevo bisogno di un consiglio per poter scegliere l'università che più mi piacesse, e in una settimana ho preso la mia decisione senza insicurezze."
+        desc: "Study Storm è una rivoluzione per chi studia! Le statistiche dettagliate mi hanno mostrato i miei progressi e mi hanno motivato a fare sempre meglio. Consiglio questa app a tutti gli studenti che vogliono ottimizzare il loro metodo di studio. Fantastica!"
     },
 ]; 

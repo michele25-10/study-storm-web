@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    @include md {
+        margin-bottom: 40px;
+    }
 
     .title {
         margin-top: 20px;
@@ -38,8 +41,8 @@
             align-items: center;
 
             @include md {
-                height: 150px;
-                width: 200px;
+                height: 100px;
+                width: 100px;
             }
         }
     }
