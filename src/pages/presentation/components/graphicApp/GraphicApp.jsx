@@ -6,7 +6,7 @@ const GraphicApp = () => {
     return (
         <div id="graphicApp" className="graphicApp">
             <div id="carouselExampleIndicators" class="carousel slide carousel-light">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators ">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -58,7 +58,7 @@ const GraphicApp = () => {
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Dopo</span>
                 </button>
-            </div>
+            </div >
         </div >
     )
 }
