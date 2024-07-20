@@ -12,7 +12,11 @@ import DescriptionProject from './components/descriptionProject/DescriptionProje
 import Footer from '../../components/footer/Footer';
 import Reviews from './components/reviews/Reviews';
 
+import { useCookies } from 'react-cookie';
+import CookieConsent from '../../components/cookie/CookieConsent';
+
 const Presentation = () => {
+    const [cookies] = useCookies(["cookieConsent"])
     return (
         <div className='presentationPage'>
             {/*Navbar + presentazione dell'applicazione */}
@@ -34,6 +38,9 @@ const Presentation = () => {
             <Reviews />
 
             <Footer />
+
+            {!cookies.cookieConsent ? <CookieConsent /> : null}
+
         </div >
     )
 }
