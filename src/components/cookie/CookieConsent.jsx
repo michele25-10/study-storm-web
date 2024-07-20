@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
 import { useCookies } from 'react-cookie'
 
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 import "./cookieConsent.scss";
 
 export default function CookieConsent() {
-    const [cookies, setCookies] = useCookies(["cookieConsent"]);
+    const [cookies, setCookies] = useCookies(["cookieConsent", "statsCookies"]);
     const giveCookieConsent = () => {
-        setCookies("cookieConsent", true, { path: "/" })
+        setCookies("cookieConsent", true, { path: "/" });
+        setCookies("statsCookies", true, { path: "/" })
     };
     const [show, setShow] = useState((true));
 
-    const [openModal, setOpenModal] = useState((false));
+    const [openCookiePolicy, setCookiePolicy] = useState((false));
+    const [openPreferencesCookies, setOpenPreferencesCookies] = useState((false));
+
 
     return (
         show ?
@@ -21,13 +27,103 @@ export default function CookieConsent() {
                     Puoi revocare il consenso in qualsiasi momento utilizzando il link nel footer.
                     Ulteriori informazioni sono disponibili nella nostra Informativa sulla privacy.
                     Se hai 16 anni o meno, seleziona "Rifiuta tutto".<br />
-                    <a href='#' style={{ color: 'white' }} onClick={() => setOpenModal(true)}>Cookie policy</a>
+                    <a href='#' style={{ color: 'white' }} onClick={() => setCookiePolicy(true)}>Cookie policy</a>
                 </p>
                 <div className="button-control">
                     <button type="button" className="btn btn-outline-light" onClick={giveCookieConsent}>Accetta tutto</button>
                     <button type="button" class="btn btn-outline-danger" onClick={() => setShow(false)} >Rifiuta tutto</button>
-                    <button type="button" class="btn btn-outline-secondary" onClick={() => setOpenModal(true)} >Preferenze</button>
+                    <button type="button" class="btn btn-outline-secondary" onClick={() => setOpenPreferencesCookies(true)} >Preferenze</button>
                 </div>
+                <CookiePolicyCentered
+                    show={openCookiePolicy}
+                    onHide={() => setCookiePolicy(false)}
+                />
+                <PreferencesCookiePolicy
+                    show={openPreferencesCookies}
+                    onHide={() => setOpenPreferencesCookies(false)}
+                />
             </div > : <></>
     )
+}
+
+function CookiePolicyCentered(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header className='  bg-dark text-light' closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    <h1>Cookie Policy</h1>
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body className='  bg-dark text-light'>
+                <div class="container">
+
+                    <p>Benvenuti su <a href="https://study-storm.netlify.app/">https://study-storm.netlify.app/</a> (di seguito "Sito"). Questa informativa sui cookie spiega come utilizziamo i cookie e tecnologie simili per raccogliere e memorizzare informazioni quando visitate il nostro Sito. Utilizzando il nostro Sito, acconsentite all'uso dei cookie in conformità con questa informativa.</p>
+
+                    <h2>Cosa sono i Cookie?</h2>
+                    <p>I cookie sono piccoli file di testo che vengono memorizzati sul vostro dispositivo (computer, tablet, smartphone) quando visitate un sito web. I cookie permettono al sito di riconoscere il vostro dispositivo e di ricordare determinate informazioni sulle vostre visite precedenti, migliorando la vostra esperienza di navigazione.</p>
+
+                    <h2>Tipi di Cookie Utilizzati</h2>
+
+                    <h3>Cookie Tecnici</h3>
+                    <p>I cookie tecnici sono essenziali per il funzionamento del nostro Sito. Questi cookie permettono di navigare nel sito e di utilizzare le sue funzionalità principali. Senza questi cookie, il sito non può funzionare correttamente. Non richiedono il consenso dell'utente per essere installati.</p>
+
+                    <h3>Cookie di Google Analytics</h3>
+                    <p>Utilizziamo Google Analytics per raccogliere informazioni sull'uso del nostro Sito. Questi cookie ci aiutano a capire come i visitatori interagiscono con il sito, quali pagine visitano, quanto tempo trascorrono su ciascuna pagina, e altre statistiche. Le informazioni raccolte da questi cookie sono aggregate e anonime. Per ulteriori dettagli, potete consultare la <a href="https://policies.google.com/privacy">privacy policy di Google Analytics</a>.</p>
+
+                    <h2>Gestione del Consenso per i Cookie</h2>
+                    <p>Quando accedete per la prima volta al nostro Sito, vi verrà presentato un banner informativo sull'uso dei cookie. Continuando a navigare sul nostro Sito, accettate l'uso dei cookie come descritto in questa informativa. Potete modificare le vostre preferenze sui cookie in qualsiasi momento attraverso le impostazioni del vostro browser. Tuttavia, disabilitare i cookie potrebbe influenzare la vostra esperienza di navigazione sul nostro Sito.</p>
+
+                    <h2>Newsletter</h2>
+                    <p>Il nostro Sito offre un servizio di newsletter che richiede l'inserimento del vostro indirizzo email. Utilizziamo questo dato esclusivamente per inviarvi aggiornamenti e informazioni relative alla nostra app. Potete disiscrivervi dalla newsletter in qualsiasi momento seguendo le istruzioni presenti in fondo ad ogni email ricevuta.</p>
+
+                    <h2>Diritti degli Utenti</h2>
+                    <p>Avete il diritto di accedere, rettificare, cancellare o limitare il trattamento dei vostri dati personali raccolti attraverso i cookie. Per esercitare questi diritti, o per qualsiasi domanda riguardante questa informativa sui cookie, potete contattarci all'indirizzo email: <a href="mailto:vostroindirizzoemail@example.com">vostroindirizzoemail@example.com</a>.</p>
+
+                    <h2>Modifiche alla Presente Informativa</h2>
+                    <p>Ci riserviamo il diritto di aggiornare questa informativa sui cookie in qualsiasi momento. Eventuali modifiche verranno pubblicate su questa pagina con indicazione della data di revisione. Vi invitiamo a consultare periodicamente questa informativa per essere informati su come utilizziamo i cookie.</p>
+
+                    <p><em>Data dell'ultima revisione: [inserire la data]</em></p>
+
+                    <p>Grazie per aver visitato il nostro Sito.</p>
+                </div>
+            </Modal.Body>
+            <Modal.Footer className='  bg-dark text-light'>
+                <button className='btn btn-outline-light' onClick={props.onHide}>Chiudi</button>
+            </Modal.Footer>
+        </Modal>
+    );
+}
+
+function PreferencesCookiePolicy(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header className='bg-dark text-light' closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    <h1>Seleziona Cookie</h1>
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body className='bg-dark text-light'>
+                <div class="container">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </Modal.Body>
+            <Modal.Footer className='bg-dark text-light'>
+                <button className='btn btn-outline-light' onClick={props.onHide}>Salva</button>
+                <button className='btn btn-outline-danger' onClick={props.onHide}>Chiudi</button>
+
+            </Modal.Footer>
+        </Modal>
+    );
 }
