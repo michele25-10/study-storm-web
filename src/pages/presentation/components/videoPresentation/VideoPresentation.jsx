@@ -7,10 +7,10 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import "./videoPresentation.scss";
 
 import ReactGA from 'react-ga';
-import { useCookies } from 'react-cookie';
+//import { useCookies } from 'react-cookie';
 
 const VideoPresentation = () => {
-    const [cookies] = useCookies(["statsCookies"])
+    //const [cookies] = useCookies(["statsCookies"])
 
     return (
         <div className="videoPresentation"  >
@@ -18,7 +18,7 @@ const VideoPresentation = () => {
                 <h3>Trailer</h3>
             </div>
             <p>Visualizza il trailer della nostra applicazione</p>
-            <div onClick={cookies.statsCookies ? ReactGA.event({ 'category': "Test", 'action': 'submit', 'label': 'label' }) : null}>
+            <div onClick={ReactGA.event({ 'category': "video", 'action': 'click', 'label': 'trailer mobile app' })}>
                 <YouTubeIcon style={{ color: "white", height: "100px", width: "100px", cursor: "pointer", }} />
             </div>
         </div>
