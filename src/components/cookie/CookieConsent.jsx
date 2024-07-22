@@ -16,6 +16,8 @@ export default function CookieConsent() {
     const [openCookiePolicy, setCookiePolicy] = useState((false));
     const [openPreferencesCookies, setOpenPreferencesCookies] = useState((false));
 
+    console.log(cookies);
+
     return (
         show ?
             <div className="cookie-modal fixed-bottom">

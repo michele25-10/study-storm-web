@@ -13,6 +13,9 @@ import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 import PrivacyPolicy from './pages/privacyPolicy/PrivacyPolicy';
 import TermOfUse from './pages/termOfUse/TermOfUse';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-9TNPGLQ0R6');
+
 const router = createBrowserRouter([
   {
     path: "/",

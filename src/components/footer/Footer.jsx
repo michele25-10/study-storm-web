@@ -7,16 +7,12 @@ import "./footer.scss";
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { addMailNewsletter } from './function/api';
-import { colors } from '@mui/material';
-import { CookiePolicyCentered } from '../cookie/CookieConsent';
 
 const Footer = () => {
     const [email, setEmail] = useState((""));
     const [responseMessage, setResponseMessage] = useState((""));
     const [error, setError] = useState((false));
     const [acceptCondition, setAcceptCondition] = useState((false));
-
-    const [openCookiePolicy, setOpenCookiePolicy] = useState((false));
 
     return (
         <div className="footer" id="footer">

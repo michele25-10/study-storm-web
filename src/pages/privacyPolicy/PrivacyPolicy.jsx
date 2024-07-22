@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
                 <h1>Politica sulla privacy</h1>
                 <p>Ultimo aggiornamento: 22 luglio 2024</p>
                 <p>Questa Politica sulla Privacy descrive le nostre politiche e procedure sulla raccolta, uso e divulgazione delle tue informazioni quando usi il Servizio e ti informa sui tuoi diritti alla privacy e su come la legge ti protegge.</p>
-                <p>Utilizziamo i tuoi dati personali per fornire e migliorare il Servizio. Utilizzando il Servizio, accetti la raccolta e l'uso delle informazioni in conformità con questa Politica sulla Privacy. Questa Politica sulla Privacy è stata creata con l'aiuto del <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
+                <p>Utilizziamo i tuoi dati personali per fornire e migliorare il Servizio. Utilizzando il Servizio, accetti la raccolta e l'uso delle informazioni in conformità con questa Politica sulla Privacy. Questa Politica sulla Privacy è stata creata con l'aiuto del <a href="https://www.termsfeed.com/privacy-policy-generator/">Privacy Policy Generator</a>.</p>
                 <h2>Interpretazione e Definizioni</h2>
                 <h3>Interpretazione</h3>
                 <p>Le parole di cui la lettera iniziale è maiuscola hanno significati definiti nelle seguenti condizioni. Le seguenti definizioni avranno lo stesso significato indipendentemente dal fatto che appaiano al singolare o al plurale.</p>
@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
                         <p><strong>Dati di Utilizzo</strong> si riferisce ai dati raccolti automaticamente, generati dall'uso del Servizio o dall'infrastruttura del Servizio stessa (ad esempio, la durata di una visita alla pagina).</p>
                     </li>
                     <li>
-                        <p><strong>Sito Web</strong> si riferisce a Study Storm, accessibile da <a href="https://studystorm.it" rel="external nofollow noopener" target="_blank">https://studystorm.it</a></p>
+                        <p><strong>Sito Web</strong> si riferisce a Study Storm, accessibile da <a href="https://studystorm.it" rel="external nofollow noopener">https://studystorm.it</a></p>
                     </li>
                     <li>
                         <p><strong>Tu</strong> significa l'individuo che accede o utilizza il Servizio, o l'azienda, o altra entità giuridica per conto della quale tale individuo sta accedendo o utilizzando il Servizio, a seconda dei casi.</p>
@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
                     <li><strong>Cookie o Cookie del Browser.</strong> Un cookie è un piccolo file posizionato sul tuo Dispositivo. Puoi istruire il tuo browser a rifiutare tutti i Cookie o a indicare quando un Cookie viene inviato. Tuttavia, se non accetti i Cookie, potresti non essere in grado di utilizzare alcune parti del nostro Servizio. A meno che tu non abbia modificato le impostazioni del tuo browser in modo da rifiutare i Cookie, il nostro Servizio può utilizzare i Cookie.</li>
                     <li><strong>Web Beacons.</strong> Alcune sezioni del nostro Servizio e le nostre email possono contenere piccoli file elettronici conosciuti come web beacons (anche chiamati clear gifs, pixel tags e single-pixel gifs) che permettono all'Azienda, per esempio, di contare gli utenti che hanno visitato quelle pagine o aperto un'email e per altre statistiche correlate al sito web (per esempio, registrare la popolarità di una certa sezione e verificare l'integrità del sistema e del server).</li>
                 </ul>
-                <p>I Cookie possono essere "Persistenti" o "Di Sessione". I Cookie Persistenti rimangono sul tuo computer personale o dispositivo mobile quando vai offline, mentre i Cookie di Sessione vengono eliminati appena chiudi il tuo browser web. Puoi saperne di più sui cookie nell'articolo del sito web di <a href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies" target="_blank">TermsFeed</a>.</p>
+                <p>I Cookie possono essere "Persistenti" o "Di Sessione". I Cookie Persistenti rimangono sul tuo computer personale o dispositivo mobile quando vai offline, mentre i Cookie di Sessione vengono eliminati appena chiudi il tuo browser web. Puoi saperne di più sui cookie nell'articolo del sito web di <a href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies">TermsFeed</a>.</p>
                 <p>Utilizziamo sia Cookie di Sessione che Persistenti per gli scopi indicati di seguito:</p>
                 <ul>
                     <li>
