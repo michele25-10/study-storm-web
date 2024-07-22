@@ -11,6 +11,7 @@ import Presentation from './pages/presentation/Presentation';
 import ConfirmRegistration from './pages/confirmRegistration/ConfirmRegistration';
 import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 import PrivacyPolicy from './pages/privacyPolicy/PrivacyPolicy';
+import TermOfUse from './pages/termOfUse/TermOfUse';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/privacy-policy/",
     element: <PrivacyPolicy />,
+  },
+  {
+    path: "/term-of-use/",
+    element: <TermOfUse />,
   },
 ]);
 

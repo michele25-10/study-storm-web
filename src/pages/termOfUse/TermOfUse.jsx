@@ -1,0 +1,108 @@
+import React from 'react'
+import "./termOfUse.scss";
+import Footer from '../../components/footer/Footer';
+
+
+export default function TermOfUse() {
+    return (
+        <div className='term-of-use '>
+            <div className="header-box">
+                <h1>Termini e condizioni d'uso</h1>
+            </div>
+
+            <div className='container'>
+                <h2><b>TERMINI E CONDIZIONI</b></h2>
+                <p>Ultimo aggiornamento: 2024-07-22</p>
+                <p>1. <b>Introduzione</b></p>
+                <p>Benvenuto su <b>Study Storm</b> (“Azienda”, “noi”, “nostro”, “ci”o “ci” nel presente documento)!</p>
+                <p>Questi Termini di Servizio (“Termini”, “Termini di Servizio”) regolano l’utilizzo del nostro sito web situato all’indirizzo <b>https://studystorm.it</b> (insieme o singolarmente “Servizio”) gestito da <b>Study Storm</b>.</p>
+                <p>La nostra Privacy Policy regola anche l’utilizzo del nostro Servizio e spiega come raccogliamo, proteggiamo e divulghiamo le informazioni che derivano dall’utilizzo delle nostre pagine web.</p>
+                <p>Il tuo accordo con noi include questi Termini e la nostra Privacy Policy (“Accordi”). Riconosci di aver letto e compreso gli Accordi e accetti di essere vincolato da essi.</p>
+                <p>Se non accetti (o non puoi rispettare) gli Accordi, non puoi utilizzare il Servizio, ma ti preghiamo di farcelo sapere inviando un'email a <b>studystorm@gmail.com</b> in modo da poter cercare una soluzione. Questi Termini si applicano a tutti i visitatori, utenti e altri che desiderano accedere o utilizzare il Servizio.</p>
+                <p>2. <b>Comunicazioni</b></p>
+                <p>Utilizzando il nostro Servizio, accetti di iscriverti a newsletter, materiali di marketing o promozionali e altre informazioni che potremmo inviarti. Tuttavia, puoi rinunciare a ricevere tali comunicazioni da noi seguendo il link di disiscrizione o inviando un'email a studystorm@gmail.com.</p>
+                <p>3. <b>Concorsi, Estrazioni e Promozioni</b></p>
+                <p>Eventuali concorsi, estrazioni o altre promozioni (collettivamente, “Promozioni”) disponibili tramite il Servizio possono essere regolati da regole separate rispetto a questi Termini di Servizio. Se partecipi a delle Promozioni, ti preghiamo di esaminare le regole applicabili e la nostra Privacy Policy. Se le regole di una Promozione sono in conflitto con questi Termini di Servizio, le regole della Promozione prevarranno.</p>
+                <p>4. <b>Contenuti</b></p>
+                <p>Il nostro Servizio ti consente di pubblicare, collegare, memorizzare, condividere e altrimenti rendere disponibili determinate informazioni, testi, grafica, video o altri materiali (“Contenuti”). Sei responsabile dei Contenuti che pubblichi sul Servizio, inclusa la loro legalità, affidabilità e appropriatezza.</p>
+                <p>Pubblicando Contenuti sul Servizio, dichiari e garantisci che: (i) i Contenuti sono tuoi (ne sei il proprietario) e/o hai il diritto di utilizzarli e di concederci i diritti e la licenza previsti in questi Termini, e (ii) che la pubblicazione dei tuoi Contenuti sul Servizio non viola i diritti alla privacy, diritti pubblicitari, diritti d'autore, diritti contrattuali o qualsiasi altro diritto di qualsiasi persona o entità. Ci riserviamo il diritto di terminare l'account di chiunque risulti violare un diritto d'autore.</p>
+                <p>Rimani proprietario di tutti i tuoi diritti sui Contenuti che invii, pubblichi o mostri sul Servizio e sei responsabile della protezione di tali diritti. Non ci assumiamo alcuna responsabilità e non abbiamo alcuna responsabilità per i Contenuti pubblicati da te o da terzi sul Servizio. Tuttavia, pubblicando Contenuti utilizzando il Servizio, ci concedi il diritto e la licenza di utilizzare, modificare, eseguire pubblicamente, visualizzare pubblicamente, riprodurre e distribuire tali Contenuti sul e tramite il Servizio. Accetti che questa licenza includa il diritto di farci rendere i tuoi Contenuti disponibili ad altri utenti del Servizio, che potranno anche utilizzare i tuoi Contenuti in conformità con questi Termini.</p>
+                <p>Study Storm ha il diritto, ma non l'obbligo, di monitorare e modificare tutti i Contenuti forniti dagli utenti.</p>
+                <p>Inoltre, i Contenuti trovati sul o tramite questo Servizio sono di proprietà di Study Storm o utilizzati con permesso. Non puoi distribuire, modificare, trasmettere, riutilizzare, scaricare, ripubblicare, copiare o utilizzare tali Contenuti, in tutto o in parte, per scopi commerciali o personali, senza esplicita autorizzazione scritta da parte nostra.</p>
+                <p>5. <b>Utilizzi Proibiti</b></p>
+                <p>Puoi utilizzare il Servizio solo per scopi leciti e in conformità con i Termini. Accetti di non utilizzare il Servizio:</p>
+                <p>0.1. In qualsiasi modo che violi leggi o regolamenti nazionali o internazionali applicabili.</p>
+                <p>0.2. Per scopi di sfruttamento, danno o tentativo di sfruttare o danneggiare i minori in qualsiasi modo, esponendoli a contenuti inappropriati o altrimenti.</p>
+                <p>0.3. Per trasmettere, o procurare l'invio di, qualsiasi materiale pubblicitario o promozionale, inclusi “posta indesiderata”, “lettera a catena”, “spam” o qualsiasi altra sollecitazione simile.</p>
+                <p>0.4. Per impersonare o tentare di impersonare l'Azienda, un dipendente dell'Azienda, un altro utente o qualsiasi altra persona o entità.</p>
+                <p>0.5. In qualsiasi modo che violi i diritti degli altri, o in qualsiasi modo sia illegale, minaccioso, fraudolento o dannoso, o in relazione a qualsiasi scopo o attività illegale, fraudolenta o dannosa.</p>
+                <p>0.6. Per impegnarsi in qualsiasi altra condotta che limiti o inibisca l'uso o il godimento del Servizio da parte di chiunque, o che, secondo noi, possa danneggiare o offendere l'Azienda o gli utenti del Servizio o esporli a responsabilità.</p>
+                <p>Inoltre, accetti di non:</p>
+                <p>0.1. Utilizzare il Servizio in qualsiasi modo che possa disabilitare, sovraccaricare, danneggiare o compromettere il Servizio o interferire con l'utilizzo di qualsiasi altra parte del Servizio, inclusa la loro capacità di partecipare ad attività in tempo reale attraverso il Servizio.</p>
+                <p>0.2. Utilizzare robot, spider o altri dispositivi automatici, processi o mezzi per accedere al Servizio per qualsiasi scopo, inclusa la monitorizzazione o la copia di qualsiasi materiale sul Servizio.</p>
+                <p>0.3. Utilizzare qualsiasi processo manuale per monitorare o copiare qualsiasi materiale sul Servizio o per qualsiasi altro scopo non autorizzato senza il nostro previo consenso scritto.</p>
+                <p>0.4. Utilizzare dispositivi, software o routine che interferiscano con il corretto funzionamento del Servizio.</p>
+                <p>0.5. Introdurre virus, cavalli di Troia, worm, bombe logiche o altro materiale che sia malevolo o tecnologicamente dannoso.</p>
+                <p>0.6. Tentare di ottenere accesso non autorizzato, interferire con, danneggiare o interrompere qualsiasi parte del Servizio, il server su cui è memorizzato il Servizio, o qualsiasi server, computer o database connesso al Servizio.</p>
+                <p>0.7. Attaccare il Servizio tramite un attacco denial-of-service o un attacco denial-of-service distribuito.</p>
+                <p>0.8. Prendere qualsiasi azione che possa danneggiare o falsificare la valutazione dell'Azienda.</p>
+                <p>0.9. Tentare altrimenti di interferire con il corretto funzionamento del Servizio.</p>
+                <p>6. <b>Analisi</b></p>
+                <p>Possiamo utilizzare fornitori di servizi terzi per monitorare e analizzare l'uso del nostro Servizio.</p>
+                <p>7. <b>Utilizzo da parte di minori di 16 anni</b></p>
+                <p>Il Servizio è destinato solo all'accesso e all'uso da parte di individui di almeno diciotto (16) anni. Accedendo o utilizzando il Servizio, dichiari e garantisci di avere almeno diciotto (16) anni e di avere l'autorità, il diritto e la capacità di stipulare questo accordo e rispettare tutti i termini e le condizioni dei Termini. Se hai meno di diciotto (16) anni, ti è proibito accedere ti è vietato l'accesso e l'utilizzo del Servizio.</p>
+                <p>8. <b>Proprietà Intellettuale</b></p>
+                <p>Il Servizio e il suo contenuto originale (escludendo il Contenuto fornito dagli utenti), le caratteristiche e le funzionalità sono e rimarranno proprietà esclusiva di Study Storm e dei suoi licenziatari. Il Servizio è protetto da copyright, marchi commerciali e altre leggi dei paesi e delle nazioni straniere. I nostri marchi non possono essere utilizzati in relazione a qualsiasi prodotto o servizio senza il previo consenso scritto di Study Storm.</p>
+                <p>9. <b>Politica sul Copyright</b></p>
+                <p>Rispettamo i diritti di proprietà intellettuale degli altri. È nostra politica rispondere a qualsiasi reclamo secondo cui il Contenuto pubblicato sul Servizio viola i diritti d'autore o altri diritti di proprietà intellettuale (“Violazione”) di qualsiasi persona o entità.</p>
+                <p>Se sei un titolare dei diritti d'autore, o autorizzato a nome di uno, e ritieni che l'opera protetta da copyright sia stata copiata in un modo che costituisce violazione del copyright, ti preghiamo di inviare il tuo reclamo via email a studystorm@gmail.com, con l'oggetto: “Violazione del Copyright” e includere nel tuo reclamo una descrizione dettagliata della presunta Violazione come dettagliato di seguito, sotto “Notifica DMCA e Procedura per Reclami di Violazione del Copyright”</p>
+                <p>Potresti essere ritenuto responsabile per danni (inclusi costi e spese legali) per dichiarazioni errate o per richieste di violazione del copyright fatte in mala fede riguardo a qualsiasi Contenuto trovato su e/o attraverso il Servizio.</p>
+                <p>10. <b>Notifica DMCA e Procedura per Reclami di Violazione del Copyright</b></p>
+                <p>Puoi inviare una notifica ai sensi del Digital Millennium Copyright Act (DMCA) fornendo al nostro Agente per i Copyright le seguenti informazioni per iscritto (vedi 17 U.S.C 512(c)(3) per ulteriori dettagli):</p>
+                <p>0.1. una firma elettronica o fisica della persona autorizzata ad agire per conto del titolare dell'interesse del copyright;</p>
+                <p>0.2. una descrizione dell'opera protetta da copyright che affermi sia stata violata, inclusa l'URL (ossia, l'indirizzo della pagina web) del luogo in cui l'opera protetta esiste o una copia dell'opera protetta;</p>
+                <p>0.3. identificazione dell'URL o di un'altra specifica posizione sul Servizio dove il materiale che ritieni stia violando è situato;</p>
+                <p>0.4. il tuo indirizzo, numero di telefono e indirizzo email;</p>
+                <p>0.5. una dichiarazione da parte tua che hai una buona fede credenza che l'uso contestato non sia autorizzato dal titolare del copyright, dal suo agente o dalla legge;</p>
+                <p>0.6. una dichiarazione da parte tua, fatta sotto pena di spergiuro, che le informazioni sopra nel tuo avviso sono accurate e che sei il titolare del copyright o autorizzato ad agire per conto del titolare del copyright.</p>
+                <p>Puoi contattare il nostro Agente per i Copyright via email a studystorm@gmail.com.</p>
+                <p>11. <b>Segnalazione Errori e Feedback</b></p>
+                <p>Puoi fornirci direttamente a studystorm@gmail.com o tramite siti e strumenti di terzi informazioni e feedback riguardanti errori, suggerimenti per miglioramenti, idee, problemi, reclami e altre questioni relative al nostro Servizio (“Feedback”). Riconosci e accetti che: (i) non conserverai, acquisirai o affermerai alcun diritto di proprietà intellettuale o altro diritto, titolo o interesse sul Feedback; (ii) la Società potrebbe avere idee di sviluppo simili al Feedback; (iii) il Feedback non contiene informazioni riservate o proprietarie da parte tua o di terzi; e (iv) la Società non è obbligata a mantenere riservato il Feedback. Nel caso in cui il trasferimento della proprietà del Feedback non sia possibile a causa di leggi obbligatorie applicabili, concedi alla Società e alle sue affiliate un diritto esclusivo, trasferibile, irrevocabile, gratuito, sub-licenziabile, illimitato e perpetuo di utilizzare (inclusi copia, modifica, creazione di opere derivate, pubblicazione, distribuzione e commercializzazione) il Feedback in qualsiasi modo e per qualsiasi scopo.</p>
+                <p>12. <b>Collegamenti ad Altri Siti Web</b></p>
+                <p>Il nostro Servizio può contenere collegamenti a siti web o servizi di terzi che non sono di proprietà o controllati da Study Storm.</p>
+                <p>Study Storm non ha controllo su, e non si assume alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti web o servizi di terzi. Non garantiamo le offerte di nessuno di questi enti/individui o dei loro siti web.</p>
+                <p>Ad esempio, i <a href="https://policymaker.io/terms-and-conditions/">Termini di Utilizzo</a> sono stati creati utilizzando <a href="https://policymaker.io/">PolicyMaker.io</a>, un'applicazione web gratuita per generare documenti legali di alta qualità. Il <a href="https://policymaker.io/terms-and-conditions/">generatore di Termini e Condizioni</a> di PolicyMaker è uno strumento gratuito e facile da usare per creare un eccellente modello standard di Termini di Servizio per un sito web, blog, negozio di e-commerce o app.</p>
+                <p>RICONOSCI E ACCETTI CHE LA SOCIETÀ NON SARÀ RESPONSABILE O LIABILE, DIRETTAMENTE O INDIRETTAMENTE, PER QUALSIASI DANNI O PERDITE CAUSATE O CHE SI PRESUMONO CAUSATE DALL'USO O DALLA FIDUCIA SU QUALSIASI CONTENUTO, BENI O SERVIZI DISPONIBILI SU O TRAMITE QUALSIASI SITO WEB O SERVIZIO DI TERZI.</p>
+                <p>TI CONSIGLIAMO FORTEMENTE DI LEGGERE I TERMINI DI SERVIZIO E LE POLITICHE SULLA PRIVACY DI QUALSIASI SITO WEB O SERVIZIO DI TERZI CHE VISITI.</p>
+                <p>13. <b>Disclaimer di Garanzia</b></p>
+                <p>QUESTI SERVIZI SONO FORNITI DALLA SOCIETÀ "COSÌ COME SONO" E "COME DISPONIBILI". LA SOCIETÀ NON FORNISCE ALCUNA RAPPRESENTAZIONE O GARANZIA DI ALCUN TIPO, ESPRESSA O IMPLICITA, RIGUARDO IL FUNZIONAMENTO DEI LORO SERVIZI, O LE INFORMAZIONI, I CONTENUTI O I MATERIALI INCLUSI. ACCETTI ESPRESSAMENTE CHE IL TUO UTILIZZO DI QUESTI SERVIZI, DEI LORO CONTENUTI, E DI QUALSIASI SERVIZIO O ARTICOLO OBTENUTO DA NOI È A TUO ESCLUSIVO RISCHIO.</p>
+                <p>NÉ LA SOCIETÀ NÉ NESSUNA PERSONA ASSOCIATA ALLA SOCIETÀ FORNISCE ALCUNA GARANZIA O RAPPRESENTAZIONE RIGUARDO ALLA COMPLETEZZA, SICUREZZA, AFFIDABILITÀ, QUALITÀ, ACCURATEZZA O DISPONIBILITÀ DEI SERVIZI. SENZA LIMITARE QUANTO SOPRA, NÉ LA SOCIETÀ NÉ CHIUNQUE ASSOCIATO ALLA SOCIETÀ GARANTISCE CHE I SERVIZI, I LORO CONTENUTI, O QUALSIASI SERVIZIO O ARTICOLO OBTENUTO TRAMITE I SERVIZI SIANO ACCURATI, AFFIDABILI, ESENTI DA ERRORI O NON INTERROTTI, CHE I DIFETTI SARANNO CORRETTI, CHE I SERVIZI O IL SERVER CHE LI RENDONO DISPONIBILI SIANO ESENTI DA VIRUS O ALTRI COMPONENTI NOCIVI O CHE I SERVIZI O QUALSIASI SERVIZIO O ARTICOLO OBTENUTO TRAMITE I SERVIZI SODDISFERANNO ALTRETTANTO LE TUE NECESSITÀ O ASPETTATIVE.</p>
+                <p>LA SOCIETÀ RENUNCIA A TUTTE LE GARANZIE DI QUALUNQUE TIPO, SIA ESPRESSE CHE IMPLICITE, STATUTARIE O ALTRE, INCLUSO MA NON LIMITATO A QUALSIASI GARANZIA DI COMMERCIABILITÀ, NON VIOLAZIONE E IDONEITÀ PER UNO SCOPO PARTICOLARE.</p>
+                <p>QUANTO SOPRA NON INFLUISCE SU QUALSIASI GARANZIA CHE NON PUÒ ESSERE ESCLUSA O LIMITATA AI SENSI DELLA LEGGE APPLICABILE.</p>
+                <p>14. <b>Limitazione di Responsabilità</b></p>
+                <p>AD ECCEZIONE DI QUANTO VIETATO DALLA LEGGE, TI IMPEGNI A MANTENERE INDIFFERENTE NOI E I NOSTRI DIRIGENTI, AMMINISTRATORI, DIPENDENTI E AGENTI DA QUALSIASI DANNI INDIRETTI, PUNITIVI, SPECIALI, INCIDENTALI O CONSEGUENTI, COMUNQUE ESSI INSORGANO (INCLUSI LE SPESE LEGALI E TUTTI I COSTI E LE SPESE RELATIVI A LITIGI E ARBITRAGGI, O IN TRIAL O IN APPELLO, SE PRESENTI, INDIPENDENTEMENTE DAL FATTO CHE IL LITIGIO O ARBITRAGGIO SIA STATO INIZIATO), INDIPENDENTEMENTE DA AZIONI DI CONTRATTO, NEGLIGENZA O ALTRE AZIONI ILLECITE, O CHE DERIVINO DA O IN COLLEGAMENTO CON QUESTO ACCORDO, INCLUSO SENZA LIMITAZIONE QUALSIASI RECLAMO PER DANNI PERSONALI O DANNI ALLA PROPRIETÀ, CHE DERIVANO DA QUESTO ACCORDO E DA QUALSIASI VIOLAZIONE DA PARTE TUA DI QUALSIASI LEGGE, STATUTO, REGOLA O REGOLAMENTO FEDERALE, STATALE O LOCALE, ANCHE SE LA SOCIETÀ È STATA PRECEDENTEMENTE AVVISATA DELLA POSSIBILITÀ DI TALI DANNI. AD ECCEZIONE DI QUANTO VIETATO DALLA LEGGE, SE VI È UNA RESPONSABILITÀ TROVATA A CARICO DELLA SOCIETÀ, SARÀ LIMITATA ALL'AMOUNT PAGATO PER I PRODOTTI E/O SERVIZI, E IN NESSUN CASO CI SARANNO DANNI CONSEQUENZIALI O PUNITIVI. ALCUNI STATI NON PERMETTONO L'ESCLUSIONE O LA LIMITAZIONE DEI DANNI PUNITIVI, INCIDENTALI O CONSEQUENTI, QUINDI LA LIMITAZIONE O ESCLUSIONE PRECEDENTE POTREBBE NON ESSERE APPLICABILE A TE.</p>
+                <p>15. <b>Risoluzione</b></p>
+                <p>Possiamo terminare o sospendere il tuo account e impedire l'accesso al Servizio immediatamente, senza preavviso o responsabilità, a nostra esclusiva discrezione, per qualsiasi motivo e senza limitazioni, inclusa, ma non solo, una violazione dei Termini.</p>
+                <p>Se desideri terminare il tuo account, puoi semplicemente smettere di utilizzare il Servizio.</p>
+                <p>Tutte le disposizioni dei Termini che per loro natura devono sopravvivere alla risoluzione sopravvivranno alla risoluzione, inclusi, senza limitazione, le disposizioni di proprietà, i disclaimer di garanzia, l'indennità e le limitazioni di responsabilità.</p>
+                <p>16. <b>Legge Applicabile</b></p>
+                <p>Questi Termini saranno regolati e interpretati in conformità con le leggi dell'Italia, che legge applicabile all'accordo senza riguardo alle sue disposizioni sul conflitto di leggi.</p>
+                <p>Il nostro mancato esercizio di qualsiasi diritto o disposizione di questi Termini non sarà considerato una rinuncia a tali diritti. Se una qualsiasi disposizione di questi Termini è ritenuta invalida o inapplicabile da un tribunale, le disposizioni rimanenti di questi Termini rimarranno in vigore. Questi Termini costituiscono l'intero accordo tra noi riguardo al nostro Servizio e sostituiscono e annullano qualsiasi accordo precedente che potremmo aver avuto tra noi riguardo al Servizio.</p>
+                <p>17. <b>Modifiche al Servizio</b></p>
+                <p>Ci riserviamo il diritto di ritirare o modificare il nostro Servizio, e qualsiasi servizio o materiale che forniamo tramite il Servizio, a nostra esclusiva discrezione senza preavviso. Non saremo responsabili se per qualsiasi motivo tutto o parte del Servizio è non disponibile in qualsiasi momento o per qualsiasi periodo. Di tanto in tanto, possiamo limitare l'accesso ad alcune parti del Servizio, o all'intero Servizio, agli utenti, inclusi gli utenti registrati.</p>
+                <p>18. <b>Modifiche ai Termini</b></p>
+                <p>Possiamo modificare i Termini in qualsiasi momento pubblicando i termini modificati su questo sito. È tua responsabilità rivedere periodicamente questi Termini.</p>
+                <p>Il tuo continuo utilizzo della Piattaforma dopo la pubblicazione dei Termini modificati significa che accetti e acconsenti alle modifiche. Sei tenuto a controllare questa pagina frequentemente per essere a conoscenza di eventuali modifiche, poiché esse sono vincolanti per te.</p>
+                <p>Continuando ad accedere o utilizzare il nostro Servizio dopo che le modifiche divengano effettive, accetti di essere vincolato dai termini modificati. Se non accetti i nuovi termini, non sei più autorizzato a utilizzare il Servizio.</p>
+                <p>19. <b>Rinuncia e Separabilità</b></p>
+                <p>Nessuna rinuncia da parte della Società a qualsiasi termine o condizione stabiliti nei Termini sarà considerata una rinuncia ulteriore o continua a tale termine o condizione o una rinuncia a qualsiasi altro termine o condizione, e qualsiasi mancata affermazione da parte della Società di un diritto o disposizione ai sensi dei Termini non costituirà una rinuncia a tale diritto o disposizione.</p>
+                <p>Se una qualsiasi disposizione dei Termini è ritenuta invalida, illegale o inapplicabile per qualsiasi motivo da un tribunale o altro tribunale competente, tale disposizione sarà eliminata o limitata al minimo necessario affinché le disposizioni rimanenti dei Termini continuino a essere in vigore e efficaci.</p>
+                <p>20. <b>Riconoscimento</b></p>
+                <p>UTILIZZANDO IL SERVIZIO O ALTRI SERVIZI FORNITI DA NOI, RICONOSCI DI AVER LETTO QUESTI TERMINI DI SERVIZIO E ACCETTI DI ESSERE VINCOLATO DA ESSI.</p>
+                <p>21. <b>Contattaci</b></p>
+                <p>Per favore, invia il tuo feedback, commenti, richieste di supporto tecnico via email: <b>studystorm@gmail.com</b>.</p>
+                <p >Questi <a href="https://policymaker.io/terms-and-conditions/">Termini di Servizio</a> sono stati creati per <b>https://studystorm.it</b> da <a href="https://policymaker.io">PolicyMaker.io</a> il 2024-07-22.</p>            </div>
+            <Footer />
+        </div >
+    )
+}
