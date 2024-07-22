@@ -13,12 +13,14 @@ const VideoPresentation = () => {
     const [cookies] = useCookies(["statsCookies"])
 
     return (
-        <div className="videoPresentation" onClick={cookies.statsCookies ? ReactGA.event({ 'category': "video", 'action': 'submit', 'label': 'video click' }) : null} >
+        <div className="videoPresentation"  >
             <div className="title">
                 <h3>Trailer</h3>
             </div>
             <p>Visualizza il trailer della nostra applicazione</p>
-            <YouTubeIcon style={{ color: "white", height: "100px", width: "100px", cursor: "pointer", }} />
+            <div onClick={cookies.statsCookies ? ReactGA.event({ 'category': "Test", 'action': 'submit', 'label': 'label' }) : null}>
+                <YouTubeIcon style={{ color: "white", height: "100px", width: "100px", cursor: "pointer", }} />
+            </div>
         </div>
     )
 }
