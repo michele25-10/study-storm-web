@@ -45,7 +45,7 @@ export default function CookieConsent() {
     )
 }
 
-function CookiePolicyCentered(props) {
+export function CookiePolicyCentered(props) {
     return (
         <Modal
             {...props}
@@ -123,7 +123,7 @@ function PreferencesCookiePolicy(props) {
             </Modal.Header>
             <Modal.Body className='bg-dark text-light'>
                 <div className="container">
-                    <ul>
+                    <ul className="list-cookies">
                         <li className='row-name-input'>
                             <div className="form-check form-switch">
                                 <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled />

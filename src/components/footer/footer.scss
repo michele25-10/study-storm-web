@@ -50,6 +50,26 @@
             }
         }
     }
+    .box-privacy {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+        .contentContact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .wrapperContact {
+                display: flex;
+                justify-content: left;
+                flex-direction: row;
+                gap: 10px;
+                margin-top: 5px;
+            }
+        }
+    }
 
     a {
         color: whitesmoke;
