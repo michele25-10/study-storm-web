@@ -10,6 +10,7 @@ import {
 import Presentation from './pages/presentation/Presentation';
 import ConfirmRegistration from './pages/confirmRegistration/ConfirmRegistration';
 import ForgotPassword from './pages/forgotPassword/ForgotPassword';
+import PrivacyPolicy from './pages/privacyPolicy/PrivacyPolicy';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/forgot-password/:id",
     element: <ForgotPassword />,
+  },
+  {
+    path: "/privacy-policy/",
+    element: <PrivacyPolicy />,
   },
 ]);
 
