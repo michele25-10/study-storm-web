@@ -183,7 +183,7 @@ export default function PrivacyPolicy() {
                 <p>Se hai domande su questa Informativa sulla Privacy, puoi contattarci:</p>
                 <ul>
                     <li>
-                        <p>Per email: studystorm@gmail.com</p>
+                        <p>Per email: studystorm.team@gmail.com</p>
                     </li>
                 </ul>
             </div>
