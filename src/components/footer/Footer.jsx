@@ -48,7 +48,7 @@ const Footer = () => {
                         setAcceptCondition(event.target.checked);
                     }} />
                     <label className="form-check-label">
-                        Accetto <a href='/privacy-policy/'>privacy policy</a> & <a href='#'>termini di uso</a>
+                        Accetto <a href='http://localhost:3000/privacy-policy/'>privacy policy</a> & <a href='http://localhost:3000/term-of-use/'>termini di uso</a>
                     </label>
                 </div>
                 {responseMessage ? <p style={{ color: error ? "red" : "green", fontWeight: 400, alignItems: "center" }}>{responseMessage}</p> : null}
@@ -82,8 +82,8 @@ const Footer = () => {
             <div className="box-privacy">
                 <h3>Privacy</h3>
                 <ul>
-                    <li><a href="privacy-policy">Privacy policy</a></li>
-                    <li><a href="#">Termini e condizioni d'uso</a></li>
+                    <li><a href="http://localhost:3000/privacy-policy">Privacy policy</a></li>
+                    <li><a href="http://localhost:3000/term-of-use/">Termini e condizioni d'uso</a></li>
                 </ul>
             </div>
         </div>
