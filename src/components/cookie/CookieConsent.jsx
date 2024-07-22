@@ -1,22 +1,20 @@
 import React, { useState } from 'react'
 import { useCookies } from 'react-cookie'
 
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 import "./cookieConsent.scss";
 
 export default function CookieConsent() {
-    const [cookies, setCookies] = useCookies(["cookieConsent", "statsCookies"]);
+    const [cookies, setCookies] = useCookies(["tecnicalCookies", "statsCookies"]);
     const giveCookieConsent = () => {
-        setCookies("cookieConsent", true, { path: "/" });
+        setCookies("tecnicalCookies", true, { path: "/" });
         setCookies("statsCookies", true, { path: "/" })
     };
     const [show, setShow] = useState((true));
 
     const [openCookiePolicy, setCookiePolicy] = useState((false));
     const [openPreferencesCookies, setOpenPreferencesCookies] = useState((false));
-
 
     return (
         show ?
@@ -31,8 +29,8 @@ export default function CookieConsent() {
                 </p>
                 <div className="button-control">
                     <button type="button" className="btn btn-outline-light" onClick={giveCookieConsent}>Accetta tutto</button>
-                    <button type="button" class="btn btn-outline-danger" onClick={() => setShow(false)} >Rifiuta tutto</button>
-                    <button type="button" class="btn btn-outline-secondary" onClick={() => setOpenPreferencesCookies(true)} >Preferenze</button>
+                    <button type="button" className="btn btn-outline-secondary" onClick={() => setOpenPreferencesCookies(true)} >Preferenze</button>
+                    <button type="button" className="btn btn-outline-danger" onClick={() => setShow(false)} >Rifiuta tutto</button>
                 </div>
                 <CookiePolicyCentered
                     show={openCookiePolicy}
@@ -41,6 +39,7 @@ export default function CookieConsent() {
                 <PreferencesCookiePolicy
                     show={openPreferencesCookies}
                     onHide={() => setOpenPreferencesCookies(false)}
+                    setcookies={setCookies}
                 />
             </div > : <></>
     )
@@ -60,7 +59,7 @@ function CookiePolicyCentered(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body className='  bg-dark text-light'>
-                <div class="container">
+                <div className="container">
 
                     <p>Benvenuti su <a href="https://study-storm.netlify.app/">https://study-storm.netlify.app/</a> (di seguito "Sito"). Questa informativa sui cookie spiega come utilizziamo i cookie e tecnologie simili per raccogliere e memorizzare informazioni quando visitate il nostro Sito. Utilizzando il nostro Sito, acconsentite all'uso dei cookie in conformità con questa informativa.</p>
 
@@ -82,12 +81,12 @@ function CookiePolicyCentered(props) {
                     <p>Il nostro Sito offre un servizio di newsletter che richiede l'inserimento del vostro indirizzo email. Utilizziamo questo dato esclusivamente per inviarvi aggiornamenti e informazioni relative alla nostra app. Potete disiscrivervi dalla newsletter in qualsiasi momento seguendo le istruzioni presenti in fondo ad ogni email ricevuta.</p>
 
                     <h2>Diritti degli Utenti</h2>
-                    <p>Avete il diritto di accedere, rettificare, cancellare o limitare il trattamento dei vostri dati personali raccolti attraverso i cookie. Per esercitare questi diritti, o per qualsiasi domanda riguardante questa informativa sui cookie, potete contattarci all'indirizzo email: <a href="mailto:vostroindirizzoemail@example.com">vostroindirizzoemail@example.com</a>.</p>
+                    <p>Avete il diritto di accedere, rettificare, cancellare o limitare il trattamento dei vostri dati personali raccolti attraverso i cookie. Per esercitare questi diritti, o per qualsiasi domanda riguardante questa informativa sui cookie, potete contattarci all'indirizzo email: <a href="mailto:studystorm@gmail.com">studystorm@gmail.com</a>.</p>
 
                     <h2>Modifiche alla Presente Informativa</h2>
                     <p>Ci riserviamo il diritto di aggiornare questa informativa sui cookie in qualsiasi momento. Eventuali modifiche verranno pubblicate su questa pagina con indicazione della data di revisione. Vi invitiamo a consultare periodicamente questa informativa per essere informati su come utilizziamo i cookie.</p>
 
-                    <p><em>Data dell'ultima revisione: [inserire la data]</em></p>
+                    <p><em>Data dell'ultima revisione: 22-07-2024</em></p>
 
                     <p>Grazie per aver visitato il nostro Sito.</p>
                 </div>
@@ -100,9 +99,19 @@ function CookiePolicyCentered(props) {
 }
 
 function PreferencesCookiePolicy(props) {
+    const [statsChecked, setStatsChecked] = useState((false));
+
+    const savePreferences = () => {
+        props.setcookies("tecnicalCookies", true, { path: "/" });
+        if (statsChecked) {
+            props.setcookies("statsCookies", true, { path: "/" })
+        }
+    }
+
     return (
         <Modal
-            {...props}
+            show={props.show}
+            onHide={props.onHide}
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
@@ -113,17 +122,28 @@ function PreferencesCookiePolicy(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body className='bg-dark text-light'>
-                <div class="container">
+                <div className="container">
                     <ul>
-                        <li></li>
+                        <li className='row-name-input'>
+                            <div className="form-check form-switch">
+                                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled />
+                                <label className="form-check-label" htmlFor="flexSwitchCheckCheckedDisabled">Tecnici</label>
+                            </div>
+                        </li>
+                        <li className='row-name-input'>
+                            <div className="form-check form-switch">
+                                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" value={statsChecked} onChange={(event) => setStatsChecked(event.target.checked)} />
+                                <label className="form-check-label" htmlFor="flexSwitchCheckChecked" >Statistiche</label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </Modal.Body>
             <Modal.Footer className='bg-dark text-light'>
-                <button className='btn btn-outline-light' onClick={props.onHide}>Salva</button>
+                <button className='btn btn-outline-light' onClick={() => { savePreferences(); props.onHide(); }}>Salva</button>
                 <button className='btn btn-outline-danger' onClick={props.onHide}>Chiudi</button>
 
             </Modal.Footer>
-        </Modal>
+        </Modal >
     );
 }

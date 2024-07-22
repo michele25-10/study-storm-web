@@ -16,7 +16,7 @@ import { useCookies } from 'react-cookie';
 import CookieConsent from '../../components/cookie/CookieConsent';
 
 const Presentation = () => {
-    const [cookies] = useCookies(["cookieConsent"])
+    const [cookies] = useCookies(["tecnicalCookies"])
     return (
         <div className='presentationPage'>
             {/*Navbar + presentazione dell'applicazione */}
@@ -39,7 +39,7 @@ const Presentation = () => {
 
             <Footer />
 
-            {!cookies.cookieConsent ? <CookieConsent /> : null}
+            {!cookies.tecnicalCookies ? <CookieConsent /> : null}
 
         </div >
     )

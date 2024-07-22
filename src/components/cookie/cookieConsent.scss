@@ -3,6 +3,7 @@
 .cookie-modal {
     background-color: rgba(45, 41, 41, 0.9);
     color: white;
+
     padding: 10px 20px;
 
     display: flex;
@@ -10,7 +11,12 @@
     align-items: center;
 
     @include md {
+        height: 20vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
         flex-direction: column;
+
+        padding: 10px 0px;
 
         .button-control {
             justify-content: space-between;
@@ -26,5 +32,16 @@
         justify-content: center;
         gap: 10px;
         flex-direction: column;
+    }
+}
+
+a {
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        font-size: large;
     }
 }
