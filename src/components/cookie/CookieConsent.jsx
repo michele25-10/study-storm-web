@@ -27,7 +27,7 @@ export default function CookieConsent() {
                     Puoi revocare il consenso in qualsiasi momento utilizzando il link nel footer.
                     Ulteriori informazioni sono disponibili nella nostra Informativa sulla privacy.
                     Se hai 16 anni o meno, seleziona "Rifiuta tutto".<br />
-                    <a href='#' style={{ color: 'white' }} onClick={() => setCookiePolicy(true)}>Cookie policy</a>
+                    <div style={{ color: 'white', textDecoration: "underline" }} onClick={() => setCookiePolicy(true)}>Cookie policy</div>
                 </p>
                 <div className="button-control">
                     <button type="button" className="btn btn-outline-light" onClick={giveCookieConsent}>Accetta tutto</button>
