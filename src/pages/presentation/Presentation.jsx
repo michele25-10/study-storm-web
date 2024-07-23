@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { /* useEffect */ } from 'react';
 
 //sass
 import "./presentation.scss";
@@ -12,17 +12,17 @@ import DescriptionProject from './components/descriptionProject/DescriptionProje
 import Footer from '../../components/footer/Footer';
 import Reviews from './components/reviews/Reviews';
 
-import { useCookies } from 'react-cookie';
-import ReactGA from 'react-ga';
+/* import { useCookies } from 'react-cookie';
+import ReactGA from 'react-ga'; */
 
 const Presentation = () => {
-    const [cookies] = useCookies(["statsCookies"]);
+    // const [cookies] = useCookies(["statsCookies"]);
 
-    useEffect(() => {
-        if (cookies.statsCookies) {
-            ReactGA.pageview(window.location.pathname);
-        }
-    });
+    /*     useEffect(() => {
+            if (cookies.statsCookies) {
+                ReactGA.pageview(window.location.pathname);
+            }
+        }); */
 
     return (
         <div className='presentationPage'>

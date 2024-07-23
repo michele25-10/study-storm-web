@@ -2,11 +2,11 @@ import React from 'react'
 
 import "./descriptionProject.scss";
 
-import ReactGA from 'react-ga';
-import { useCookies } from 'react-cookie';
+// import ReactGA from 'react-ga';
+// import { useCookies } from 'react-cookie';
 
 const DescriptionProject = () => {
-    const [cookies] = useCookies(["statsCookies"])
+    //const [cookies] = useCookies(["statsCookies"])
 
     return (
         <div className="descriptionProject">
@@ -16,9 +16,9 @@ const DescriptionProject = () => {
                 </p>
                 <div className="downloadButton">
                     <button className="btn market-btn google-btn" onClick={() => {
-                        if (cookies.statsCookies) {
+                        /*if (cookies.statsCookies) {
                             ReactGA.event({ 'category': "PlayStore button", 'action': 'click', 'label': 'App store button' });
-                        }
+                        }*/
                     }}>
                         <span className="market-button-subtitle">Scarica su</span>
                         <span className="market-button-title">Play Store</span>

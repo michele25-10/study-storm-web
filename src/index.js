@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { /*useEffect*/ } from 'react';
 import ReactDOM from 'react-dom/client';
 
 import {
@@ -13,19 +13,18 @@ import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 import PrivacyPolicy from './pages/privacyPolicy/PrivacyPolicy';
 import TermOfUse from './pages/termOfUse/TermOfUse';
 
-import ReactGA from 'react-ga';
+/*import ReactGA from 'react-ga';*/
 import { useCookies } from 'react-cookie';
 import CookieConsent from './components/cookie/CookieConsent';
 
 const App = () => {
-  const [cookies] = useCookies(["statsCookies"])
+  const [cookies] = useCookies(["tecnicalCookies"])
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (cookies.statsCookies) {
-      console.log("inizializzo google analytics");
       ReactGA.initialize('G-9TNPGLQ0R6');
     }
-  }, [cookies.statsCookies]);
+  }, [cookies.statsCookies]);*/
 
   const router = createBrowserRouter([
     {

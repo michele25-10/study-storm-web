@@ -1,12 +1,12 @@
 import React from 'react'
 import "./headerBox.scss";
 
-import { useCookies } from 'react-cookie';
-import ReactGA from 'react-ga';
+/* import { useCookies } from 'react-cookie';
+import ReactGA from 'react-ga'; */
 
 
 const HeaderBox = () => {
-    const [cookies] = useCookies(["statsCookies"])
+    // const [cookies] = useCookies(["statsCookies"])
 
     return (
         <div className="headerBox">
@@ -15,19 +15,19 @@ const HeaderBox = () => {
                 <div className="itemNavbar">
                     <ul>
                         <li><a href='#footer' onClick={() => {
-                            if (cookies.statsCookies) {
+                            /* if (cookies.statsCookies) {
                                 ReactGA.event({ 'category': "Contattateci", 'action': 'click', 'label': 'Navbar link' });
-                            }
+                            } */
                         }}>Contattateci</a></li>
                         <li><a href='#functionality' onClick={() => {
-                            if (cookies.statsCookies) {
+                            /* if (cookies.statsCookies) {
                                 ReactGA.event({ 'category': "Funzionalità", 'action': 'click', 'label': 'Navbar link' });
-                            }
+                            } */
                         }}>Funzionalità</a></li>
                         <li><a href='#reviews' onClick={() => {
-                            if (cookies.statsCookies) {
+                            /* if (cookies.statsCookies) {
                                 ReactGA.event({ 'category': "Recensioni", 'action': 'click', 'label': 'Navbar link' });
-                            }
+                            } */
                         }}>Recensioni</a></li>
                     </ul>
                 </div>
