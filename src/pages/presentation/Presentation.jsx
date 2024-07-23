@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 //sass
 import "./presentation.scss";
@@ -13,9 +13,17 @@ import Footer from '../../components/footer/Footer';
 import Reviews from './components/reviews/Reviews';
 
 import { useCookies } from 'react-cookie';
+import ReactGA from 'react-ga';
 
 const Presentation = () => {
-    const [cookies] = useCookies(["tecnicalCookies"])
+    const [cookies] = useCookies(["statsCookies"]);
+
+    useEffect(() => {
+        if (cookies.statsCookies) {
+            ReactGA.pageview(window.location.pathname);
+        }
+    });
+
     return (
         <div className='presentationPage'>
             {/*Navbar + presentazione dell'applicazione */}
@@ -37,8 +45,6 @@ const Presentation = () => {
             <Reviews />
 
             <Footer />
-
-
         </div >
     )
 }

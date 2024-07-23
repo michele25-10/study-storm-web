@@ -83,7 +83,7 @@ export function CookiePolicyCentered(props) {
                     <p>Il nostro Sito offre un servizio di newsletter che richiede l'inserimento del vostro indirizzo email. Utilizziamo questo dato esclusivamente per inviarvi aggiornamenti e informazioni relative alla nostra app. Potete disiscrivervi dalla newsletter in qualsiasi momento seguendo le istruzioni presenti in fondo ad ogni email ricevuta.</p>
 
                     <h2>Diritti degli Utenti</h2>
-                    <p>Avete il diritto di accedere, rettificare, cancellare o limitare il trattamento dei vostri dati personali raccolti attraverso i cookie. Per esercitare questi diritti, o per qualsiasi domanda riguardante questa informativa sui cookie, potete contattarci all'indirizzo email: <a href="mailto:studystorm@gmail.com">studystorm@gmail.com</a>.</p>
+                    <p>Avete il diritto di accedere, rettificare, cancellare o limitare il trattamento dei vostri dati personali raccolti attraverso i cookie. Per esercitare questi diritti, o per qualsiasi domanda riguardante questa informativa sui cookie, potete contattarci all'indirizzo email: <a href="mailto:studystorm.team@gmail.com">studystorm.team@gmail.com</a>.</p>
 
                     <h2>Modifiche alla Presente Informativa</h2>
                     <p>Ci riserviamo il diritto di aggiornare questa informativa sui cookie in qualsiasi momento. Eventuali modifiche verranno pubblicate su questa pagina con indicazione della data di revisione. Vi invitiamo a consultare periodicamente questa informativa per essere informati su come utilizziamo i cookie.</p>
