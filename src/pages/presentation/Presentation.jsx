@@ -13,7 +13,6 @@ import Footer from '../../components/footer/Footer';
 import Reviews from './components/reviews/Reviews';
 
 import { useCookies } from 'react-cookie';
-import CookieConsent from '../../components/cookie/CookieConsent';
 
 const Presentation = () => {
     const [cookies] = useCookies(["tecnicalCookies"])
@@ -39,7 +38,6 @@ const Presentation = () => {
 
             <Footer />
 
-            {!cookies.tecnicalCookies ? <CookieConsent /> : null}
 
         </div >
     )

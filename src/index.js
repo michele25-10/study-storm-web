@@ -14,35 +14,53 @@ import PrivacyPolicy from './pages/privacyPolicy/PrivacyPolicy';
 import TermOfUse from './pages/termOfUse/TermOfUse';
 
 import ReactGA from 'react-ga';
-ReactGA.initialize('G-9TNPGLQ0R6');
+import { useCookies } from 'react-cookie';
+import CookieConsent from './components/cookie/CookieConsent';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Presentation />,
-  },
-  {
-    path: "/confirm-registration/:id",
-    element: <ConfirmRegistration />,
-  },
-  {
-    path: "/forgot-password/:id",
-    element: <ForgotPassword />,
-  },
-  {
-    path: "/privacy-policy/",
-    element: <PrivacyPolicy />,
-  },
-  {
-    path: "/term-of-use/",
-    element: <TermOfUse />,
-  },
-]);
+const App = () => {
+  const [cookies] = useCookies(["statsCookies"])
+
+  useEffect(() => {
+    if (cookies.statsCookies) {
+      ReactGA.initialize('G-9TNPGLQ0R6');
+    }
+  }, [cookies.statsCookies]);
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Presentation />,
+    },
+    {
+      path: "/confirm-registration/:id",
+      element: <ConfirmRegistration />,
+    },
+    {
+      path: "/forgot-password/:id",
+      element: <ForgotPassword />,
+    },
+    {
+      path: "/privacy-policy/",
+      element: <PrivacyPolicy />,
+    },
+    {
+      path: "/term-of-use/",
+      element: <TermOfUse />,
+    },
+  ]);
+
+  return (
+    <div>
+      <RouterProvider router={router} />
+      {!cookies.tecnicalCookies ? <CookieConsent /> : null}
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   /*<React.StrictMode>*/
-  < RouterProvider router={router} />
+  <App />
   /*</React.StrictMode >*/
 );
 

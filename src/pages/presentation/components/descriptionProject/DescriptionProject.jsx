@@ -2,7 +2,12 @@ import React from 'react'
 
 import "./descriptionProject.scss";
 
+import ReactGA from 'react-ga';
+import { useCookies } from 'react-cookie';
+
 const DescriptionProject = () => {
+    const [cookies] = useCookies(["statsCookies"])
+
     return (
         <div className="descriptionProject">
             <div className="cardProject">
@@ -10,7 +15,11 @@ const DescriptionProject = () => {
                 <p>Study Storm è l'app definitiva per gli studenti universitari e delle superiori che vogliono prendere il controllo dei loro studi. Con Study Storm, puoi creare esami e suddividerli in task più piccoli e gestibili. Monitora il tuo progresso con agende dettagliate che registrano il tempo impiegato e i risultati di ogni task. Non hai voglia di inserire i dati manualmente? Nessun problema! Attiva il timer Pomodoro o il cronometro per registrare automaticamente i tuoi progressi. Inoltre, grazie alle statistiche accurate e uno storico delle tue performance, potrai visualizzare il trend del tuo miglioramento. Non lasciare che lo stress delle settimane di esami ti soffochi, prendi in mano il tuo futuro con Study Storm!
                 </p>
                 <div className="downloadButton">
-                    <button className="btn market-btn google-btn">
+                    <button className="btn market-btn google-btn" onClick={() => {
+                        if (cookies.statsCookies) {
+                            ReactGA.event({ 'category': "PlayStore button", 'action': 'click', 'label': 'App store button' });
+                        }
+                    }}>
                         <span className="market-button-subtitle">Scarica su</span>
                         <span className="market-button-title">Play Store</span>
                     </button>
