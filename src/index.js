@@ -22,6 +22,7 @@ const App = () => {
 
   useEffect(() => {
     if (cookies.statsCookies) {
+      console.log("inizializzo google analytics");
       ReactGA.initialize('G-9TNPGLQ0R6');
     }
   }, [cookies.statsCookies]);
